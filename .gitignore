@@ -1,0 +1,6 @@
+node_modules
+
+apps/api/.env
+
+# Build output
+apps/api/dist/
