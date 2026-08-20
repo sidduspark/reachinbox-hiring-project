@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_URL = "http://localhost:4001";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4001";
 
 type EmailStatus = "SCHEDULED" | "PROCESSING" | "SENT" | "FAILED";
 
@@ -820,6 +820,7 @@ function formatDate(value: string) {
 }
 
 export default App;
+
 
 
 
