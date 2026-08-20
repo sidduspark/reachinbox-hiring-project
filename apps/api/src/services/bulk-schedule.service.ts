@@ -1,4 +1,4 @@
-﻿import { prisma } from "../database/prisma.js";
+import { prisma } from "../database/prisma.js";
 import { emailQueue } from "../queues/email.queue.js";
 
 export interface BulkScheduleInput {
@@ -96,3 +96,4 @@ export async function scheduleBulkEmails(input: BulkScheduleInput) {
     throw error;
   }
 }
+
